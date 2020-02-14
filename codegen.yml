@@ -1,0 +1,18 @@
+overwrite: true
+schema: "https://hndup-api-cms.herokuapp.com/graphql"
+documents: 
+  - ./graphql/queries/**/*.ts
+generates:
+  ./graphql/types.tsx:
+    plugins:
+      - add: '/* eslint-disable */'
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+    # The combined options of all provided plug-ins
+    # More information about the options below:
+    # graphql-code-generator.com/docs/plugins/typescript-react-apollo#configuration
+    config:
+      withHOC: false
+      withHooks: true
+      withComponent: false
