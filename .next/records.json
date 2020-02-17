@@ -1,0 +1,74 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!node_modules/postcss-loader/src/index.js??__nextjs_postcss!global/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "multi next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.tsx! node_modules/next/dist/client/router.js": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "framework": 2,
+      "906be7f0e822f2f856bc9644456b06d8a76ab054": 3,
+      "static/mdwBrbuuH5oXWBmz0opA2/pages/_app.js": 4,
+      "static/mdwBrbuuH5oXWBmz0opA2/pages/_error.js": 5,
+      "static/mdwBrbuuH5oXWBmz0opA2/pages/about.js": 6,
+      "static/mdwBrbuuH5oXWBmz0opA2/pages/index.js": 7,
+      "static/runtime/main.js": 8,
+      "static/runtime/polyfills.js": 9,
+      "0a9cbcaab5c691477188a52fa6fd4a247d655f0d": 10,
+      "static/7aVqoHpix6BgUlFy7JPO-/pages/_app.js": 11,
+      "static/7aVqoHpix6BgUlFy7JPO-/pages/_error.js": 12,
+      "static/7aVqoHpix6BgUlFy7JPO-/pages/about.js": 13,
+      "static/7aVqoHpix6BgUlFy7JPO-/pages/index.js": 14,
+      "4d9f5a48b5b11f9315fe1ff7aabb0877b3c4b104": 3,
+      "static/-dnhBv9cMtKYGtpEgUpXD/pages/_app.js": 4,
+      "static/-dnhBv9cMtKYGtpEgUpXD/pages/_error.js": 5,
+      "static/-dnhBv9cMtKYGtpEgUpXD/pages/about.js": 6,
+      "static/-dnhBv9cMtKYGtpEgUpXD/pages/index.js": 7,
+      "11b5431cf9a9d270604b7729da4be9e51ae031d6": 10,
+      "static/SltYPCslknNz0vdBnQ1Gd/pages/_app.js": 11,
+      "static/SltYPCslknNz0vdBnQ1Gd/pages/_error.js": 12,
+      "static/SltYPCslknNz0vdBnQ1Gd/pages/about.js": 13,
+      "static/SltYPCslknNz0vdBnQ1Gd/pages/index.js": 14,
+      "8863554f62f954a9cb663595895a8df2d63330fa": 3,
+      "static/qfHY33rSgHYOmK9A-spbT/pages/_app.js": 4,
+      "static/qfHY33rSgHYOmK9A-spbT/pages/_error.js": 5,
+      "static/qfHY33rSgHYOmK9A-spbT/pages/about.js": 6,
+      "static/qfHY33rSgHYOmK9A-spbT/pages/index.js": 7
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

@@ -2,23 +2,31 @@ import React from 'react'
 import { NextPage } from 'next';
 import fetch from 'isomorphic-unfetch';
 import { Layout } from '../components/Layout';
+import useSWR from 'swr'
 
-
+const API_URL = 'https://hndup-api-cms.herokuapp.com/graphql?query={restaurants{Name%20categories{%20id%20name%20}%20picture{url}}}'
 interface Props {
     userAgent?: string
     restaurants:any
 
 }
 
-const HomePage: NextPage<Props> = ({ userAgent, restaurants }) => {
+const fetcher = async () => {
+    const res = await fetch(API_URL );
+    const json = await res.json();
+    return json.data.restaurants
+}
 
+const HomePage: NextPage<Props> = ({ userAgent }) => {
+    const { data, error } = useSWR('/repos/zeit/next.js', fetcher)
+    
     return (
         <Layout>
             {
-                restaurants && restaurants.map(restaurant => (
+                data && data.map(restaurant => (
                     <div>
                         <h1>Name: {restaurant.Name}</h1>
-                        <img src={`https://hndup-api-cms.herokuapp.com${restaurant.picture.url}`} 
+                        <img src={restaurant.picture.url} 
                             alt=""
                             width={50}
                             height={50}
@@ -30,12 +38,5 @@ const HomePage: NextPage<Props> = ({ userAgent, restaurants }) => {
     )
 }
 
-HomePage.getInitialProps = async () => {
-    const res = await fetch(`https://hndup-api-cms.herokuapp.com/graphql?query={restaurants{Name%20categories{%20id%20name%20}%20picture{url}}}`);
-    const data = await res.json();
-    return {
-        restaurants: data.data.restaurants
-    }
-};
 
 export default HomePage

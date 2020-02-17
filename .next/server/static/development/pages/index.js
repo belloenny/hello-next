@@ -157,53 +157,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.tsx");
+/* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swr */ "swr");
+/* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(swr__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/mac/Desktop/hello-next/pages/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
+const API_URL = 'https://hndup-api-cms.herokuapp.com/graphql?query={restaurants{Name%20categories{%20id%20name%20}%20picture{url}}}';
+
+const fetcher = async () => {
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()(API_URL);
+  const json = await res.json();
+  return json.data.restaurants;
+};
+
 const HomePage = ({
-  userAgent,
-  restaurants
+  userAgent
 }) => {
+  const {
+    data,
+    error
+  } = swr__WEBPACK_IMPORTED_MODULE_3___default()('/repos/zeit/next.js', fetcher);
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["Layout"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 24
     },
     __self: undefined
-  }, restaurants && restaurants.map(restaurant => __jsx("div", {
+  }, data && data.map(restaurant => __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 27
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 28
     },
     __self: undefined
   }, "Name: ", restaurant.Name), __jsx("img", {
-    src: `https://hndup-api-cms.herokuapp.com${restaurant.picture.url}`,
+    src: "\\blur-cellphone-close-up-device-196646.jpg",
     alt: "",
     width: 50,
     height: 50,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 29
     },
     __self: undefined
   }))));
-};
-
-HomePage.getInitialProps = async () => {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()(`https://hndup-api-cms.herokuapp.com/graphql?query={restaurants{Name%20categories{%20id%20name%20}%20picture{url}}}`);
-  const data = await res.json();
-  return {
-    restaurants: data.data.restaurants
-  };
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);
@@ -252,6 +257,17 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "swr":
+/*!**********************!*\
+  !*** external "swr" ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("swr");
 
 /***/ })
 
