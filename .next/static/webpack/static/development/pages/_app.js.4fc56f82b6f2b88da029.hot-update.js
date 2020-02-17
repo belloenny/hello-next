@@ -1,0 +1,18 @@
+webpackHotUpdate("static/development/pages/_app.js",{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./global/index.css":
+/*!**************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??__nextjs_postcss!./global/index.css ***!
+  \**************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, "body {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n    margin: 0;\n    font-size: 20px;\n    -webkit-font-smoothing: antialiased;\n    line-height: 1.3;\n    box-sizing: border-box;\n  }\n  \n\n  input {\n    height: 46px;\n    border-radius: 4px;\n    background-color: transparent;\n    width: 96.3%;\n  \n  \n  }\n\n  ::-moz-selection {\n    background: purple; \n}\n\n  ::selection {\n    background: purple; \n}\n::-moz-selection {\n    background: purple; \n}\n  \n  select {\n    height: 46px;\n    border-radius: 4px;\n    background-color: transparent;\n    width: 100%;\n    color: rgba(255, 255, 255, 0.651);\n  }\n  \n  h3 {\n    margin: 0\n  }\n  \n  p {\n    margin: 0\n  }\n  \n \n  a {\n    color: rgba(30, 32, 34, 1);\n    font-weight: 700px;\n    cursor: pointer;\n    text-decoration: none;\n  }\n  \n  \n  button:disabled,\n  button[disabled] {\n    display: none;\n  }\n  \n  .extra {\n    width: 58%\n  }", "",{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;IACI,wIAAwI;IACxI,SAAS;IACT,eAAe;IACf,mCAAmC;IACnC,gBAAgB;IAChB,sBAAsB;EACxB;;;EAGA;IACE,YAAY;IACZ,kBAAkB;IAClB,6BAA6B;IAC7B,YAAY;;;EAGd;;EAEA;IACE,kBAAkB;AACtB;;EAFE;IACE,kBAAkB;AACtB;AACA;IACI,kBAAkB;AACtB;;EAEE;IACE,YAAY;IACZ,kBAAkB;IAClB,6BAA6B;IAC7B,WAAW;IACX,iCAAiC;EACnC;;EAEA;IACE;EACF;;EAEA;IACE;EACF;;;EAGA;IACE,0BAA0B;IAC1B,kBAAkB;IAClB,eAAe;IACf,qBAAqB;EACvB;;;EAGA;;IAEE,aAAa;EACf;;EAEA;IACE;EACF","file":"index.css","sourcesContent":["body {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n    margin: 0;\n    font-size: 20px;\n    -webkit-font-smoothing: antialiased;\n    line-height: 1.3;\n    box-sizing: border-box;\n  }\n  \n\n  input {\n    height: 46px;\n    border-radius: 4px;\n    background-color: transparent;\n    width: 96.3%;\n  \n  \n  }\n\n  ::selection {\n    background: purple; \n}\n::-moz-selection {\n    background: purple; \n}\n  \n  select {\n    height: 46px;\n    border-radius: 4px;\n    background-color: transparent;\n    width: 100%;\n    color: rgba(255, 255, 255, 0.651);\n  }\n  \n  h3 {\n    margin: 0\n  }\n  \n  p {\n    margin: 0\n  }\n  \n \n  a {\n    color: rgba(30, 32, 34, 1);\n    font-weight: 700px;\n    cursor: pointer;\n    text-decoration: none;\n  }\n  \n  \n  button:disabled,\n  button[disabled] {\n    display: none;\n  }\n  \n  .extra {\n    width: 58%\n  }"]}]);
+
+
+/***/ })
+
+})
+//# sourceMappingURL=_app.js.4fc56f82b6f2b88da029.hot-update.js.map
