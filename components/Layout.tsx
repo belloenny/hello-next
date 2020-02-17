@@ -14,6 +14,13 @@ export const Layout: React.FC<Props> = ({children}) => {
                 </title>
           </Head>
          <main> {children}</main>
+         <style jsx>{`
+           main {
+               max-width: 960px;
+               margin-left: auto;
+               margin-right: auto;
+           }  
+        `}</style>
         </React.Fragment>
     )
 }
