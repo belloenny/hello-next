@@ -1,0 +1,54 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!node_modules/postcss-loader/src/index.js??__nextjs_postcss!global/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "multi next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.tsx! node_modules/next/dist/client/router.js": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "framework": 2,
+      "ff73c6a960c9aaf153652882fbb79277813a77cc": 3,
+      "static/2v-uzKsKsPdL6ZFx4AtId/pages/_app.js": 4,
+      "static/2v-uzKsKsPdL6ZFx4AtId/pages/_error.js": 5,
+      "static/2v-uzKsKsPdL6ZFx4AtId/pages/about.js": 6,
+      "static/2v-uzKsKsPdL6ZFx4AtId/pages/index.js": 7,
+      "static/runtime/main.js": 8,
+      "static/runtime/polyfills.js": 9
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
